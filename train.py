@@ -14,7 +14,7 @@ depth = 5
 clf = RandomForestClassifier(max_depth=depth)
 clf.fit(X_train, y_train)
 
-acc = clf.score(X_test, y_test)
+acc = clf.score(X_test, y_test, n_estimators = 50)
 print(acc)
 
 y_pred = clf.predict(X_test)
